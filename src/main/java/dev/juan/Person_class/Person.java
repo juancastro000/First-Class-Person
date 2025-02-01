@@ -16,6 +16,41 @@ public class Person {
 
     }
 
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public String getApellido() {
+        return apellido;
+    }
+
+    public void setApellido(String apellido) {
+        this.apellido = apellido;
+    }
+
+    public String getDni() {
+        return dni;
+    }
+
+    public void setDni(String dni) {
+        this.dni = dni;
+    }
+
+    public int getNacimiento() {
+        return nacimiento;
+    }
+
+    public void setNacimiento(int nacimiento) {
+        if (nacimiento > 1900 && nacimiento < 2026) {
+            this.nacimiento = nacimiento;
+        } else System.out.println("año invalido");
+        
+    }
+
 
 
 }
